@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 .hero {
     margin-top: 75px; /* Memberi jarak agar tidak tertutup navbar */
     background: linear-gradient(135deg, rgba(45, 52, 54, 0.8), rgba(45, 52, 54, 0.9)), 
-                url('https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187289/samples/ecommerce/accessories-bag.jpg') center/cover;
+    url('https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187289/samples/ecommerce/accessories-bag.jpg') center/cover;
     height: 80vh;
     display: flex;
     align-items: center;
