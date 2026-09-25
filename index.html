@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship Project - Group 1</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Google: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icon FontAwesome untuk ikon WhatsApp & Instagram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <!-- Ganti link gambar ini dengan logo sekolah kalian yang sudah di-upload ke Cloudinary -->
+            <img src="https://res.cloudinary.com/dzdnztjsi/image/upload/v1790296683/Sds-Amore-Prime-School-logo_z6vtpc.webp" alt="School Logo" class="school-logo">
+            <span class="logo-text">Amore Prime School - PKWU Project</span>
+        </div>
+        <!-- Menu Navigasi -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Tombol Menu untuk HP (Hamburger) -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Banner Utama -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Nusantara Crafts</h1>
+            <p>Elevating local products with a touch of youthful creativity for our Entrepreneurship (PKWU) Project.</p>
+            <a href="#about" class="btn-primary">Discover More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section (Penjelasan Tugas PKWU) -->
+    <section id="about" class="section-container bg-light">
+        <h2 class="section-title">About Our Project</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Welcome to our Entrepreneurship Showcase!</h3>
+                <p>We are high school students learning the fundamentals of business, product design, and digital marketing. This website is built as part of our final project for the <strong>Entrepreneurship (PKWU)</strong> subject.</p>
+                <p>Our mission is to simulate a real-world e-commerce experience by creating, marketing, and selling our handcrafted products. By supporting us, you are contributing to our learning journey in becoming future young entrepreneurs!</p>
+            </div>
+            <div class="about-image">
+                <img src="https://res.cloudinary.com/dzdnztjsi/image/upload/v1790270023/SISWA-SMA-hgfnhfn_k4b7by.jpg" alt="Students working on project">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="products" class="section-container">
+        <h2 class="section-title">Our Product Catalog</h2>
+        <div class="product-grid">
+            
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image" onclick="openModal('https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187296/samples/shoe.jpg')">
+                    <img src="https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187296/samples/shoe.jpg" alt="Paper Flowers">
+                    <div class="overlay"><i class="fas fa-search-plus"></i> View Detail</div>
+                </div>
+                <div class="product-info">
+                    <h3>Aesthetic Flowers Shoes</h3>
+                    <p class="price">Rp 35.000</p>
+                    <p class="desc">Beautiful handcrafted flowers made from recycled materials, perfect for room or desk decoration.</p>
+                    <a href="https://wa.me/6281234567890?text=Hello,%20I%20want%20to%20order%20the%20Paper%20Flowers" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image" onclick="openModal('https://res.cloudinary.com/demo/image/upload/w_400,h_300,c_fill/shoes.jpg')">
+                    <img src="https://res.cloudinary.com/demo/image/upload/w_400,h_300,c_fill/shoes.jpg" alt="Custom Painted Shoes">
+                    <div class="overlay"><i class="fas fa-search-plus"></i> View Detail</div>
+                </div>
+                <div class="product-info">
+                    <h3>Custom Painted Shoes</h3>
+                    <p class="price">Rp 120.000</p>
+                    <p class="desc">Canvas shoes with hand-painted designs. You can custom request the design based on your preference.</p>
+                    <a href="https://wa.me/6281234567890?text=Hello,%20I%20want%20to%20order%20the%20Custom%20Shoes" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image" onclick="openModal('https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187306/cld-sample-5.jpg')">
+                    <img src="https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187306/cld-sample-5.jpg" alt="Ethnic Bracelet">
+                    <div class="overlay"><i class="fas fa-search-plus"></i> View Detail</div>
+                </div>
+                <div class="product-info">
+                    <h3>Ethnic Handwoven Shoes</h3>
+                    <p class="price">Rp 15.000</p>
+                    <p class="desc">Handwoven string bracelets featuring beautiful local ethnic patterns. Great for daily wear.</p>
+                    <a href="https://wa.me/6281234567890?text=Hello,%20I%20want%20to%20order%20the%20Ethnic%20Bracelet" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team / Profil Murid Section -->
+    <section id="team" class="section-container bg-light">
+        <h2 class="section-title">Our Creative Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="https://res.cloudinary.com/demo/image/upload/w_150,h_150,c_thumb,g_face/face_left.png" alt="Student 1">
+                <h4>Budi Santoso</h4>
+                <p>Project Leader</p>
+            </div>
+            <div class="team-card">
+                <img src="https://res.cloudinary.com/demo/image/upload/w_150,h_150,c_thumb,g_face/face_center.png" alt="Student 2">
+                <h4>Siti Aminah</h4>
+                <p>Production Manager</p>
+            </div>
+            <div class="team-card">
+                <img src="https://res.cloudinary.com/dzdnztjsi/image/upload/v1763187297/samples/smile.jpg" alt="Student 3">
+                <h4>Agus Pratama</h4>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Contact & Follow Us</h3>
+            <p>Have questions or want to request a custom product? Reach out to us via social media.</p>
+            <div class="social-links">
+                <a href="https://wa.me/6281234567890" target="_blank" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://instagram.com/instagram" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Entrepreneurship (PKWU) Class Project - Built with Pride</p>
+        </div>
+    </footer>
+
+    <!-- Fitur Lightbox / Modal untuk Pop-up Gambar -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Script Javascript -->
+    <script>
+        // --- Fitur Pop Up Gambar ---
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+
+        function openModal(imgSrc) {
+            modal.style.display = "flex"; 
+            modalImg.src = imgSrc;        
+            setTimeout(() => { modal.classList.add("show"); }, 10);
+        }
+
+        function closeModal() {
+            modal.classList.remove("show"); 
+            setTimeout(() => { modal.style.display = "none"; }, 300);
+        }
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) { closeModal(); }
+        });
+
+        // --- Fitur Menu Hamburger di HP ---
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        // --- Fitur Menutup Menu HP saat link diklik ---
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
